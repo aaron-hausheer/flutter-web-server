@@ -1,7 +1,7 @@
 [package]
 name = "dbconnect"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
 axum = "0.7"
@@ -13,10 +13,10 @@ tower = "0.4"
 dotenv = "0.15"
 hyper = "1.8.1"
 vercel_runtime = "1"
-vercel_axum = "1.1.6"
+vercel_axum = "1"
 tokio = { version = "1", features = ["full"] }
 
 [[bin]]
-name = "hello"
-path = "api/hello.rs"
+name = "index"
+path = "api/index.rs"
 
