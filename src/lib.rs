@@ -42,9 +42,9 @@ pub fn build_router() -> Router {
     dotenv().ok();
 
     Router::new()
-        .route("/", get(index_handler))
+        .route("/", get(movies_html_handler()))
         .route("/about", get(about_handler))
-        .route("/movies", get(movies_html_handler).post(create_movie_handler))
+        .route("/movies", get(index_handler()).post(create_movie_handler))
         .route("/movies/:id", put(update_movie_handler).delete(delete_movie_handler))
         .route("/movies.json", get(movies_json_handler))
         .route("/api", get(root_handler))
