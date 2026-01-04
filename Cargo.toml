@@ -12,3 +12,5 @@ reqwest = { version = "0.12", features = ["json"] }
 tower = "0.4"
 dotenv = "0.15"
 hyper = "1.8.1"
+vercel_runtime = "1.1.6"
+vercel_axum = "1.1.6"
