@@ -2,7 +2,7 @@
   "version": 2,
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index" },
-    { "source": "/about(.*)", "destination": "/api/about" },
-    { "source": "/movies(.*)", "destination": "/api/moves" }
+    { "source": "/about", "destination": "/api/about" },
+    { "source": "/movies", "destination": "/api/movies" }
   ]
 }
